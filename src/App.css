@@ -1,0 +1,262 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color:#e6e6e6;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.loading {
+  text-align: center;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.774);
+  text-shadow: 2px 2px 5px rgba(33, 33, 33, 0.755);
+  margin-top: 20px;
+}
+
+
+.app{
+  min-height: 100vh;
+  min-width: 100vw;
+  background-size: cover;
+}
+
+.bodyday{
+  background-color: #ececec;
+}
+.bodynig{
+  background-color: #0f162d;
+}
+
+.header {
+  background-color: #3333338c;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  min-height: 6vh;
+}
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.curr{
+  margin-left: 15px;
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  height:6vh;
+  background-color:transparent;
+  border: none;
+}
+.curr img{
+  margin-right: -15px;
+  height: 100%;
+}
+
+.header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 7vh;
+}
+.img-day{
+  background-image:url('photo.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.img-nig{
+  background-image:url('photo4.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.title {
+  text-align: center;
+  padding: 50px 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items:start;
+  justify-content:left;
+  padding-left: 20vw;
+}
+
+.title h1 {
+  font-size: 36px;
+}
+
+.colday{
+  color:#ff7f50 ;
+  text-shadow: 2px 2px 5px rgba(255, 146, 50, 0.7);
+}
+
+.colnig{
+  color:rgb(52, 152, 219);
+  text-shadow: 2px 2px 5px rgba(52, 152, 219, 0.5);;
+}
+
+
+.title h2 {
+  margin: 0px;
+  font-size: 36px;
+  text-shadow: 2px 2px 5px rgba(33, 33, 33, 0.692);
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 13vh;
+}
+
+.search input {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.search button {
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.backday{
+  background-color: #ff7f50;
+}
+.backnig{
+  background-color: #1e3368;
+}
+
+.weather {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 3px solid #c7c7c7;
+  border-radius: 8px;
+  background-color: white;
+  text-align: center;
+}
+.weather:hover{
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.115);
+}
+
+.weather h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.weather .temp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.weather img {
+  width: 50px;
+  height: 50px;
+}
+
+.weather p {
+  margin: 5px 0;
+}
+
+
+.alert {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.alert-mess{
+  position: absolute;
+  top: 1vh;
+  right: 1vw;
+
+  background: #f9f9f9;
+  color: #333; 
+  padding: 10px;
+  min-width: 25vw;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: "Arial", sans-serif;
+}
+
+.alert-mess p {
+  text-shadow: #000000;
+  color: rgb(60, 58, 54);
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.close-alert {
+  background-color: #ff7e3e;
+  text-shadow: wheat;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.close-alert:hover {
+  background-color: #e6692d;
+}
+
+.map{
+  position: "relative";
+}
+
+.map button{
+  position:absolute;
+  border-radius: 25%;
+  background-color:black ;
+  color: white;
+  right: 1vh;
+  top: 10vh;
+  z-index: 1000;
+  padding: 0.4%;
+
+}
+
+.nomap{
+   position: "relative";
+}
+
+.nomap button{
+  opacity: 70%;
+  color: white;
+  position: absolute;
+  transform: translateY(-50%);
+  top:14vh;
+  right: 1%;
+  margin-left: 10px;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 9%;
+  cursor: pointer;
+}
+.nomap button:hover{
+  opacity: 100%;
+}
+

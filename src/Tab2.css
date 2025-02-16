@@ -1,0 +1,134 @@
+/* Overall container */
+.container {
+    text-align: center;
+    padding: 30px;
+    font-family: "Arial", sans-serif;
+    background: linear-gradient(145deg, #ff6f61, #ffbc00);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.086);
+    min-height: 83vh;
+}
+
+/* Title styling */
+.titles {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #fff;
+    padding: 15px 25px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+    display: inline-block;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Forecast grid: 3 rows, auto columns */
+.forecast-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); /* Dynamic grid */
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Weather card */
+.weather-card {
+    color: white;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+/* Weather card hover effect */
+.weather-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Text inside weather card */
+.weather-card p {
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Hour text */
+.hour {
+    color: #555;
+    font-size: 18px;
+}
+
+/* Temperature */
+.temp {
+    color: #ff6f61;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* Loading and error messages */
+.loading, .error {
+    color: #ff4f4f;
+    font-size: 20px;
+    font-weight: 600;
+    animation: fadeInOut 1.5s infinite;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .forecast-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .forecast-grid {
+        grid-template-columns: 1fr; /* 1 column per row */
+    }
+}
+
+/* Light Mode */
+@media (prefers-color-scheme: light) {
+    .container {
+        background: linear-gradient(145deg, #ff9a8b, #ff6a88);
+    }
+    .weather-card {
+        background: radial-gradient(circle, rgba(255, 255, 255, 0.49), rgba(255, 255, 255, 0.403));
+        color: #333;
+    }
+    .titles {
+        background: rgba(0, 0, 0, 0.4);
+        color: #fff;
+    }
+    .temp {
+        color: #ff5c5c;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .container {
+        background: linear-gradient(145deg, #ffffff60, #444);
+    }
+    .weather-card {
+        background: radial-gradient(circle, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.25));
+        color: #fff;
+    }
+    .titles {
+        background: rgba(0, 0, 0, 0.342);
+        color: #fff;
+    }
+    .temp {
+        color: #ffb347;
+    }
+}
+
+
+
