@@ -23,8 +23,6 @@ This is a React-based weather prediction web application that integrates multipl
 - **Tab 2:** Shows today's predicted weather for Beirut based on the pre-trained LSTM model.
 - **Tab 3:** Allows users to select any city and train an LSTM model on-the-fly for weather prediction.
 
-```
-
 ## Screenshots
 ### Home Screen
 ![Home Screen](screenshots/home.png)
