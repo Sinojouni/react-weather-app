@@ -15,7 +15,10 @@ This is a React-based weather prediction web application that integrates multipl
   - FastAPI (for Beirut weather LSTM prediction)
   - FastAPI (for custom city weather prediction with LSTM training)
 - **Machine Learning:** TensorFlow (LSTM implementation)
-- **Data Source:** OpenWeather API to get current weather ,archive-api.open-meteo.com to get historical data to train the LSTM model,api.weatherapi.com to get yesterday weather
+- **Data Source:**
+      OpenWeather API to get current weather
+      archive-api.open-meteo.com to get historical data to train the LSTM model
+      api.weatherapi.com to get yesterday weather
 
 
 ## Usage
